@@ -14,7 +14,8 @@ try:
     elif (sys.argv[1]=='d'):
         call('xrandr --output {} --auto --output {} --auto --right-of {}'.format(lvds,lvds,vga),shell=True)
     elif sys.argv[1]=='s':
-        call('xrandr --output {} --off --output {} --auto'.format(vga,dp), shell= True) if sys.argv[2]=="0" else call ("xrandr --output {} --off --output {} --auto".format(dp,vga), shell=True)
+        call('xrandr --output {} --off --output {} --auto --output {} --off'.format(vga,dp, lvds), shell= True) if sys.argv[2]=="0" else call ("xrandr --output {} --off --output {} --auto --output {} --off".format(dp,vga, lvds), shell=True)
+
     else:
         print(" Introduce:\n\t b [int from 1 to 10]\n\t\t or\n\t d")
 
