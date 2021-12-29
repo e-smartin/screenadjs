@@ -20,4 +20,4 @@ try:
 
         
 except:
-    print(" Introduce:\n\t b [int from 1 to 10]\n\t\t or\n\t d")
+    print(" Introduce:\n\t b [int from 1 to 10]\n\t\tor\n\t s [0 or 1]  \n\t \tor\n\t d")
